@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <canvas id="miCanvas"></canvas>
+    <div id="mainContainer">
+        <div id="formContainer">
+            <h1>Como te sientes hoy?</h1>
+            <form id="miFormulario" action="practica3.php" method="POST">
+                <label>
+                    <input type="radio" name="estado_animo" value="Feliz" required>
+                    Feliz
+                </label><br>
+
+                <label>
+                    <input type="radio" name="estado_animo" value="Triste">
+                    Triste
+                </label><br>
+
+                <label>
+                    <input type="radio" name="estado_animo" value="Energetico">
+                    Enérgico
+                </label><br>
+
+                <label>
+                    <input type="radio" name="estado_animo" value="Relajado">
+                    Relajado
+                </label><br>
+
+                <label>
+                    <input type="radio" name="estado_animo" value="Inspirado">
+                    Inspirado
+                </label><br>
+
+                <label>
+                    <input type="radio" name="estado_animo" value="Estresado">
+                    Estresado
+                </label><br><br>   
+                <input type="hidden" id="colorInicial" name="colorInicial">   
+                <div class="submit-button">
+                    <button type="submit">Enviar</button>
+                </div>         
+            </form>
+            
+        </div>
+
+    </div>
+</body>
+
+</html>
